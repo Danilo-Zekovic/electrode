@@ -8,6 +8,10 @@
     "email": "danilozeka93@gmail.com",
     "url": ""
   },
+  "engines": {
+    "node":"7.2.x",
+    "npm":"3.10.x"
+  },
   "contributors": [],
   "files": [
     "server",
