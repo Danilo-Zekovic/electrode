@@ -22,7 +22,7 @@ class Home extends React.Component {
     const {checked, value} = props;
     return (
       <div>
-        <h1>Hello <a href={"https://github.com/electrode-io"}>{"Electrode tutorial T"}</a></h1>
+        <h1>Hello <a href={"https://github.com/electrode-io"}>{"Electrode tutorial"}</a></h1>
         <div> <p>Our beloved friends</p></div>
         <div className="images">
           {imageUrls.map((imageUrl, index) => this.renderImage(imageUrl, index))}
@@ -39,6 +39,7 @@ class Home extends React.Component {
             <button type={"button"} onClick={props.onIncrease}>+</button>
           </div>
         </div>
+        {this.props.children}
       </div>
     );
   }
